@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attractive Buttons</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f06, #f79);
+      }
+      .container {
+        text-align: center;
+        background-color: white;
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        margin: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        background-color: #ff4081;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .btn:hover {
+        background-color: #e6006b;
+        transform: scale(1.05);
+      }
+      .btn:active {
+        background-color: #c60059;
+        transform: scale(0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome!</h1>
+      <p>Choose an option below:</p>
+      <button class="btn" onclick="window.location.href='login.html'">
+        Login/Register
+      </button>
+      <button class="btn" onclick="window.location.href='view.html'">
+        View Website
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("book bg.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      input[type="text"],
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+      #order{
+        display: flex;
+margin-bottom: 10px;
+      }
+      #comm{
+        display: flex;
+        margin-top: 10px;
+      }
+
+      a {
+        display: flex;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="book">
+      <h2>Book a Table</h2>
+      <input type="text" id="name" placeholder="Name" required />
+      <!-- <input type="email" name="" placeholder="Email" required /> -->
+      <input id="order" placeholder="Phone-Number" rows="6" required></input>
+      <input type="number" id="comm" placeholder="No. of chairs to book" id="book" />
+      <button type="submit" id="book">Book</button>
+      <a href="index.html">BACK</a>
+    </form>
+  </body>
+  <script type="module" src="login.js"></script>
+</html>
